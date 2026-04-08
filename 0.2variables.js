@@ -12,5 +12,5 @@ for (i=0;i<numeros.length;i++){
     }
 }
 
-console.log(pares)
-console.log(impares)
+console.log(`Pares: ${pares}`)
+console.log(`Impares: ${impares}`)
