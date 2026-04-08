@@ -1,16 +1,13 @@
-let numeros = [2,3,6,7,3,6,8,9,4,5,6,7]
-let pares = []
-let impares = []
-
-for (i=0;i<numeros.length;i++){
-    posicionInicial = numeros[i]
-    if (posicionInicial % 2 === 0){
-        pares.push(posicionInicial) 
-    }
-    else{
-        impares.push(posicionInicial)
+let number = prompt(`ingrese el numero que desea que sea multiplicado`)
+let multiplicador = prompt(`ingrese el numero por el cual desea multiplicar el numero maximo es 10`)
+if (number < 0) {
+    console.log(`el numero que desea multiplicar es menor a 0 no se puede ejecutar`)
+}
+else if (multiplicador > 10) {
+    console.log(`el numero por el cual desea multiplicar el numero es mayor a 10 no se puede ejecutar`)
+} else {
+    for (let i = 1; i <= multiplicador; i++) {
+        let multiplicacion = number * i
+        console.log(`${number} x ${i} = ${multiplicacion}`)
     }
 }
-
-console.log(`Pares: ${pares}`)
-console.log(`Impares: ${impares}`)
